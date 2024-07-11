@@ -88,11 +88,24 @@ export class MessageData {
   }
 
   async delete(messageId: ObjectID): Promise<ChatMessage> {
-    // TODO allow a message to be marked as deleted
-    let newMessage = new ChatMessage();
-    newMessage.deleted = true;
-    return newMessage;
-    return new ChatMessage() // Minimum to pass ts checks -replace this
+    /* 
+       Regarding Part 2
+       Allow a message to be marked as deleted
+       Update the 'delete' property to 'true'
+    */
+   
+      const query = { _id: messageId };
+      const updateProperty = { deleted: true };
+      const messageDeleted = await this.chatMessageModel.findOneAndUpdate(
+        query,
+        updateProperty,
+        {
+          new: true,
+          returnOriginal: false,
+        },
+      );
+      if (!messageDeleted) throw new Error('The message to be deleted does not exist');
+      return chatMessageToObject(messageDeleted);
   }
 
   async resolve(messageId: ObjectID): Promise<ChatMessage> {
