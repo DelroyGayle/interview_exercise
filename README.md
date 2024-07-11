@@ -43,7 +43,7 @@ Finally, install the require dependencies
 $ npm install
 ```
 
-Once this is complete, you should be good the run the code - check package.json for examples of what functions are alreasy defined. 
+Once this is complete, you should be good to run the code - check package.json for examples of what functions are already defined. 
 
 e.g.
 
@@ -54,7 +54,7 @@ $ npm run test
 # Interview Exercise
 
 The exercise is broken into 3 parts. To attempt the exercise, we'd like you to fork this repo, making the changes to your own version of the code. 
-We encourage you to submit solutions to each part of the exercise as seperate commits, back to your fork, so that it's easier to follow and discuss. 
+We encourage you to submit solutions to each part of the exercise as separate commits, back to your fork, so that it's easier to follow and discuss. 
 
 When you've completed the exercise, please add the following github handles to your fork, so we can review your submission:
 
@@ -72,13 +72,13 @@ The service fails to start - ```npm run start:dev``` -  Use the messages to fix 
 
 A test is failing - ```npm run test``` - implement the code necessary to pass the test
 
-## Part 3 - Strech
+## Part 3 - Stretch
 
 Currently, we allow tags to be added to a conversation, so we can help users to find things they're interested in.
 
 We would like to extend the functionality, to allow the sender of a message to add or update tags on a single message, and allow other users to find messages based on these tags.
 
-While we don't expect everyone to complete this part of the exercise, it will form the basis of disucssion in an interview. Please make as much progress with this, as you feel comfortable doing. Don't allow it to be all-consuming. A couple of hours at most for all parts of the exercise. 
+While we don't expect everyone to complete this part of the exercise, it will form the basis of discussion in an interview. Please make as much progress with this, as you feel comfortable doing. Don't allow it to be all-consuming. A couple of hours at most for all parts of the exercise. 
 
 We'd love to hear about
 * How you would go about implementing the solution
@@ -100,17 +100,17 @@ There are two interfaces; a [rest interface](http://localhost:3000/api), and a [
 
 The rest interface allows a client to set up a new conversation, and to manage who has access to it.
 
-The graphql interface allows users to send and recieve messages in the conversations that they are in.
+The graphql interface allows users to send and receive messages in the conversations that they are in.
 
 
-You can create a conversation through the [Swagger UI](http://localhost:3000/api) to attain a conversationId (to use with the graphql end points). Some of the requests require authorization. Select the `Authorize` button (top right of the screen) and enter the key `ssssh`. To create a conversation select `Try it out` in POST /conversation.
+You can create a conversation through the [Swagger UI](http://localhost:3000/api) to attain a conversationId (to use with the graphql endpoints). Some of the requests require authorization. Select the `Authorize` button (top right of the screen) and enter the key `ssssh`. To create a conversation select `Try it out` in POST /conversation.
 
 ## Structure
 
 The code in each module is separated into 3 layers
 1) controllers and/or resolvers: These provide the external interfaces for the REST and Graphql interfaces respectively, and passes the request to the logic layer
 2) logic: This implements common business rules, and can make requests to other modules and the repository layer to fulfil the request.
-3) repository: This manages hwo data is stored in the module. It should only be used directly by the logic layer.
+3) repository: This manages how data is stored in the module. It should only be used directly by the logic layer.
 
 
 my-app/
@@ -132,7 +132,7 @@ my-app/
 - E2e tests are in test folder
 - Jest is used for creating these tests.
 
-To run the unit tests you wil need to have the databases running - run `docker compose up -d`
+To run the unit tests you will need to have the databases running - run `docker compose up -d`
 
 ```bash
 # unit tests
@@ -146,9 +146,9 @@ $ npm run test:e2e:watch
 ```
 
 
-## Mocking the unibuddy_api end point (e.g /api/v1/users/)
+## Mocking the unibuddy_api endpoint (e.g /api/v1/users/)
 
-You may want to mock data from the ub_internal_api end points. We can do this using [Mock Server](https://www.mock-server.com/)
+You may want to mock data from the ub_internal_api endpoints. We can do this using [Mock Server](https://www.mock-server.com/)
 
 
 For `/api/v1/users/{$userId}` an example would be 
