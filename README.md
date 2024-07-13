@@ -1,3 +1,6 @@
+# PLEASE NOTE
+Please read **README_PARTS1TO3.md** in regard to my answers to this exercise. Thank you.
+
 # Unibuddy Engineering Exercise
 
 This exercise is based on the deployed Unibuddy Chat service. The chat service is a core component in our product suite. 
@@ -90,12 +93,13 @@ We'd love to hear about
 The following docs are from the live service repo. You may find them helpful. 
 
 
-# development
+# Development
+```
 $ npm run start:dev
 ```
 
 You are now able to make requests to the api.
-There are two interfaces; a [rest interface](http://localhost:3000/api), and a [graphql interface](http://localhost:3000/graphql).
+There are two interfaces; a [rest interface](http://localhost:3000/api),<br> and a [graphql interface](http://localhost:3000/graphql).
 
 
 The rest interface allows a client to set up a new conversation, and to manage who has access to it.
@@ -103,7 +107,7 @@ The rest interface allows a client to set up a new conversation, and to manage w
 The graphql interface allows users to send and receive messages in the conversations that they are in.
 
 
-You can create a conversation through the [Swagger UI](http://localhost:3000/api) to attain a conversationId (to use with the graphql endpoints). Some of the requests require authorization. Select the `Authorize` button (top right of the screen) and enter the key `ssssh`. To create a conversation select `Try it out` in POST /conversation.
+You can create a conversation through the [Swagger UI](http://localhost:3000/api) to attain<br> a conversationId (to use with the graphql endpoints). <br>Some of the requests require authorization. Select the `Authorize` button (top right of the screen) and enter the key `ssssh`. <br>To create a conversation select `Try it out` in POST /conversation.
 
 ## Structure
 
@@ -113,6 +117,7 @@ The code in each module is separated into 3 layers
 3) repository: This manages how data is stored in the module. It should only be used directly by the logic layer.
 
 
+```
 my-app/
 ├─ src/                             
 │  ├─ example-graphql/              # Example module
@@ -125,6 +130,7 @@ my-app/
 │    ├─ example-graphql.logic.ts -------------- Implements common business logic
 │  ├─ app.module.ts
 │  ├─ main.ts
+```
 
 ## Testing
 
@@ -165,3 +171,6 @@ url: /api/v1/users/599ebd736a1d100004aeb744
 "profile_photo": null
 }
 ```
+
+# PLEASE NOTE
+Please read **README_PARTS1TO3.md** in regard to my answers to the above exercise. Thank you.
