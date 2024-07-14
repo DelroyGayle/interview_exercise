@@ -84,10 +84,10 @@ We would like to extend the functionality, to allow the sender of a message to a
 While we don't expect everyone to complete this part of the exercise, it will form the basis of discussion in an interview. Please make as much progress with this, as you feel comfortable doing. Don't allow it to be all-consuming. A couple of hours at most for all parts of the exercise. 
 
 We'd love to hear about
-* How you would go about implementing the solution
-* What problems you might encounter
-* How you would go about testing
-* What you might do differently
+* How would you go about implementing the solution?
+* What problems might you encounter?
+* How would you go about testing?
+* What you might do differently?
 
 # Additional
 The following docs are from the live service repo. You may find them helpful. 
