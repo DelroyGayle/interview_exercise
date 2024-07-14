@@ -62,6 +62,9 @@ update *updateProperty* with the value *{ deleted: true }*
       return chatMessageToObject(messageDeleted);
   }
   ```
+![image](https://github.com/user-attachments/assets/109ae26a-b256-4ad4-833b-4c208f1f3dae)
+
+
 ### Please note:
 
 After the service was started using *npm run start:dev*<br>
