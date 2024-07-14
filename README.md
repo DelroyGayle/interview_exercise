@@ -87,7 +87,7 @@ We'd love to hear about
 * How would you go about implementing the solution?
 * What problems might you encounter?
 * How would you go about testing?
-* What you might do differently?
+* What might you do differently?
 
 # Additional
 The following docs are from the live service repo. You may find them helpful. 
