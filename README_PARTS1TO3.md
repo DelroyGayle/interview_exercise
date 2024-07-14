@@ -119,18 +119,19 @@ The tags attached to the *ConversationChatModel* will in turn be updated with an
 When the user amends any message within a conversation with new or amended hashtags,<br>
 the chat service will update the Message Tags accordingly;<br> which in turns means that the Conversation Tags would have to be updated accordingly.
 
-If the user deletes hashtags from a message the chat service would in like manner remove the corresponding tags.<br>
-Functionality needs to be put in place to mark a tag<br> as deleted so that the Unibuddy Chat service would know to remove the corresponding Conversation Tag.
+If the user deletes hashtags from a message the chat service would in like manner remove the corresponding Message Tags.<br>
+Functionality needs to be put in place to mark a tag as deleted so that the Unibuddy Chat service would know<br>to remove the corresponding Conversation Tags.
 
 #### Finding Messages
 
 In order for users to find messages based on these tags,<br>
-Method 1 - a text solution<br>
+**Method 1 - a text solution**<br>
 I propose that the user could create a message with a sole line consisting of the word ```#find``` followed by the tags in question e.g.<br>
 ```#find euro2024 england spain```
 
-Method 2 - UI solution<br>
+**Method 2 - UI solution**<br>
 Alternatively, depending on the current implementation, a search bar could be implemented so that the user could enter the search tags.
+<br>For example:
 
 ![image](https://github.com/user-attachments/assets/98f17867-1853-4f9e-b895-fc6f05ee00b5)
 
@@ -145,7 +146,7 @@ Either way, once the search is commenced, then the chat service would retrieve m
 
 The main problem I see with this present approach is figuring out a uniform, consistent method for adding tags to the message model<br> so that they can be converted to conversation chat tags as easily as possible.<br>
 This would imply the use of *two* distinct model types with *two* different types of tags.<br>
-Thus, the primary challenges are how to efficiently and reliably get both models<br> to cooperate while minimizing complexity.
+Thus, the primary challenges are how to efficiently and reliably get both models to cooperate while minimizing complexity.
 
 
 #### My MockUp 
@@ -254,7 +255,7 @@ Here is a sample Jest test:
 
 
 
-### What you might do differently
+### What might you do differently?
 
 
 Because tags are currently attached to Conversations it means that additional kind of tagging is needed for messages i.e. hashtags. 
