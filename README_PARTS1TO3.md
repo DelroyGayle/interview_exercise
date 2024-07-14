@@ -132,6 +132,9 @@ I propose that the user could create a message with a sole line consisting of th
 Method 2 - UI solution<br>
 Alternatively, depending on the current implementation, a search bar could be implemented so that the user could enter the search tags.
 
+![image](https://github.com/user-attachments/assets/98f17867-1853-4f9e-b895-fc6f05ee00b5)
+
+
 
 Either way, once the search is commenced, then the chat service would retrieve messages which have the tags<br>
 ```euro2024 OR england OR spain```
