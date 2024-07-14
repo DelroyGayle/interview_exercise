@@ -1,5 +1,5 @@
 # PLEASE NOTE
-Please read **README_PARTS1TO3.md** in regard to my answers to this exercise. Thank you.
+Please read **[README_PARTS1TO3.md](https://github.com/DelroyGayle/interview_exercise/blob/main/README_PARTS1TO3.md)** in regard to my answers to this exercise. Thank you.
 
 # Unibuddy Engineering Exercise
 
@@ -173,4 +173,4 @@ url: /api/v1/users/599ebd736a1d100004aeb744
 ```
 
 # PLEASE NOTE
-Please read **README_PARTS1TO3.md** in regard to my answers to the above exercise. Thank you.
+Please read **[README_PARTS1TO3.md](https://github.com/DelroyGayle/interview_exercise/blob/main/README_PARTS1TO3.md)** in regard to my answers to the above exercise. Thank you.
